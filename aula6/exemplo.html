@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6 - VARIAVEIS E FUNCOES</title>
+</head>
+<script>
+    // var qualquer; //global
+    // let qq = "variavel let"; //global
+    // const valorConstante= 100; //global Constante
+
+    // if(true) {
+    //     console.log(valorConstante);
+    //     var varDentroDoIf ="Estou dentro do If sou uma var";
+    //     let letDentroDoIf = "Sou uma Let e estou dentro do if";
+    // }
+
+    // valorConstante = 1;
+
+
+    // console.log(valorConstante);
+
+    // literal
+    function soma(){
+        console.log(1 + 3);
+    }
+
+    //soma();
+
+    function concatenarNome(){
+        var nome ="Kevin"; //local
+        var sobreNome =" Inada";
+        alert(nome + sobreNome);
+    }
+
+    //concatenarNome();
+
+    function novaConcatenerNomes(nome, sobreNome ){
+        document.write(nome +" "+ sobreNome);
+    }
+
+    novaConcatenerNomes("Kevin", "Inada");
+
+    let semNome = function(){
+        alert("Estou em uma funcao anonima");
+    }
+
+    //semNome();
+
+    let funComPars = function(idade,idadePar){
+        if(idade > idadePar){
+            alert("Voce tem idade maior que"+ idadePar);
+        } else {
+            alert("Voce tem idade menor que"+ idadePar);
+        }
+    }
+
+    funComPars(20, 18);
+    funComPars(17, 18);
+</script>
+<body>
+    
+</body>
+</html>
